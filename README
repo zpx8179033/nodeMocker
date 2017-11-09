@@ -1,0 +1,30 @@
+node下的mock工具
+
+/**
+ * 数据配置example
+ * 支持array,object,int,float,string等类型
+ * 以上类型可以采用|后跟单数值表示特定值,
+ * 也可以采用 1-100这种方式表示数值范围,
+ * 还可以采用['a','b','c']这种方式表示字符串的取值范围
+ * 暂时只支持@name,@date,@bool这三种特殊类型,统一采用随机生成数据
+ * data: {
+                name: "@name",
+                birthday: "@date",
+                age:"int|18-50",
+                page:"string|['qwe','asd','zxc']",
+                source:"int|9",
+                isBool:"@bool",
+                isBoolean:"bool|true",
+                imgList:[{
+                    url: "string|['a','b','c']",
+                    birthday: "@date",
+                    time:"int|18-50",
+                }],
+                userInfo:{
+                    name: "@name",
+                    birthday: "@date",
+                    age:"int|18-50",
+                }
+            }
+ * @type {{isMock: boolean, checkUrl: ((url))}}
+ */

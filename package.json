@@ -1,0 +1,22 @@
+{
+  "name": "nodemocker",
+  "version": "1.0.0",
+  "description": "node下的mock工具",
+  "main": "src/index.js",
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpx8179033/nodeMocker.git"
+  },
+  "author": "zhangpengxiao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zpx8179033/nodeMocker/issues"
+  },
+  "homepage": "https://github.com/zpx8179033/nodeMocker#readme"
+}
