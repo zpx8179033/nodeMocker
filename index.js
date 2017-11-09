@@ -11,11 +11,11 @@
 
 'use strict';
 const parse = require('./src/parse/parse');
-const mockConfig = require('../node-mock.config');
+const mockConfig = require('../../nodemocker.config');
 
 module.exports = function(req, res ,next){
     const mockService = {
-        isMock : true,
+        isMock : mockConfig.isOpen,
         checkUrl(url){
             let mockProperty = mockConfig.urlData.filter((item)=>{
                     return item.url.split('?')[0] === url.split('?')[0];

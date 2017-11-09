@@ -1,6 +1,6 @@
 {
   "name": "nodemocker",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "node下的mock工具",
   "main": "index.js",
   "dependencies": {},
