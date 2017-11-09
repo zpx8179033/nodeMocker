@@ -10,8 +10,8 @@
  */
 
 'use strict';
-const parse = require('./parse/parse');
-const mockConfig = require(__dirname+'/../node-mock.config');
+const parse = require('./src/parse/parse');
+const mockConfig = require('../node-mock.config');
 
 module.exports = function(req, res ,next){
     const mockService = {
