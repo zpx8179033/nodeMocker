@@ -231,6 +231,10 @@ module.exports = (function () {
             }
 
             return range;
+        },
+        dateTimestamp: function(min , max){
+            let currentTime = (Date.now() / 1000).toFixed();
+            return Number(currentTime);
         }
     }
 
