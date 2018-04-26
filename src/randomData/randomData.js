@@ -17,7 +17,7 @@ module.exports = (function () {
         // 从数组中随机选取一个元素，并返回。
         pick: function pick(arr, min, max) {
             // pick( item1, item2 ... )
-            if (!Util.isArray(arr)) {
+            if (!Array.isArray(arr)) {
                 arr = [].slice.call(arguments)
                 min = 1
                 max = 1

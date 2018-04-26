@@ -23,8 +23,8 @@ module.exports = function () {
                 if (target === copy) continue
                 if (copy === undefined) continue
 
-                if (Util.isArray(copy) || Util.isObject(copy)) {
-                    if (Util.isArray(copy)) clone = src && Util.isArray(src) ? src : []
+                if (Array.isArray(copy) || Util.isObject(copy)) {
+                    if (Array.isArray(copy)) clone = src && Array.isArray(src) ? src : []
                     if (Util.isObject(copy)) clone = src && Util.isObject(src) ? src : {}
 
                     target[name] = Util.extend(clone, copy)
@@ -65,7 +65,7 @@ module.exports = function () {
     })
 
     Util.isObjectOrArray = function(value) {
-        return Util.isObject(value) || Util.isArray(value)
+        return Util.isObject(value) || Array.isArray(value)
     }
 
     Util.isNumeric = function(value) {
