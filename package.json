@@ -1,8 +1,8 @@
 {
   "name": "nodemocker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "node下的mock工具",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {},
   "devDependencies": {
   },
