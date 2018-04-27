@@ -25,7 +25,9 @@ module.exports = {
                 default:
                     if (config[key] instanceof Array) {
                         let array = [];
-                        if (config[key].length > 0 && config[key][0]) {
+                        if (config[key].length > 1) {
+                            array = array.concat(config[key])
+                        } else if (config[key].length > 0 && config[key][0]) {
                             let count = Math.floor(Math.random() * 20);
                             for (var i = 0; i < count; i++) {
                                 array.push(this.parseConfig(config[key][0]))
